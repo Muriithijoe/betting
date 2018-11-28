@@ -5,3 +5,7 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url='/accounts/login/')
 def index(request):
     return render(request,'index.html')
+
+@login_required(login_url='/accounts/login/')
+def categories(request):
+    return render(request,'make_wager.html')
