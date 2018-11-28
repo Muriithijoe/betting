@@ -1,8 +1,9 @@
-<nav class="nav-extended blue">
+<nav class="nav-extended green">
     <div class="nav-wrapper">
       <a href="{% url 'indexPage' %}" class="brand-logo">Bets</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'Profile' %}">Profile</a></li>
         <li><a href="/admin">Admin</a></li>
         <li><a href="/accounts/password/change">Change Password</a></li>
         <li><a href="/logout/">Logout</a></li>

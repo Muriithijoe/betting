@@ -1,3 +1,29 @@
 {%extends 'base.html'%}
+{% load bootstrap3 %}
+{% load staticfiles %}
+{% load static %}
 
-<h1>Wagers</h1>
+{% block content %}
+<div class="container">
+  <!-- <style>
+        body{
+          background-image: url(../static/.jpg);
+          background-size: cover;
+        }
+  </style> -->
+  <div class="row">
+    {% for wager in bets %}
+    <div class="divider"></div>
+      <div class="section">
+        <h5>{{wager.title}}</h5>
+        <p>{{wager.description}}</p>
+        <p>bet: {{wager.money}}</p>
+      </div>
+    {% endfor %}
+
+    </div>
+
+</div>
+
+
+{% endblock %}
